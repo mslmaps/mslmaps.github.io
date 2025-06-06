@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Multimodal Spatial Language Maps for Robot Navigation and Manipulation</title>
+  <meta name="description" content="Multimodal Spatial Language Maps for Robot Navigation and Manipulation">
+  <meta name="keywords" content="MLSMaps">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Multimodal Spatial Language Maps for Robot Navigation and Manipulation">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Multimodal Spatial Language Maps for Robot Navigation and Manipulation">
+  <meta property="og:image" content="https://tom-huang.github.io/mlsmaps/static/images/cover_lady.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1082" />
+  <meta property="og:image:height" content="639" />
+  <meta property="og:url" content="https://tom-huang.github.io/mlsmaps" />
+  <meta property="og:description"
+    content="Project page for Multimodal Spatial Language Maps for Robot Navigation and Manipulation" />
+  <meta name="twitter:title" content="Multimodal Spatial Language Maps for Robot Navigation and Manipulation" />
+  <meta name="twitter:description"
+    content="Project page for Multimodal Spatial Language Maps for Robot Navigation and Manipulation" />
+  <meta name="twitter:image" content="https://tom-huang.github.io/mlsmaps/static/images/cover_lady.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCS73PWLZL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TCS73PWLZL');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswal sh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/vlmaps_icon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPRRQQR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start is-centered">
+        <a class="navbar-item" href="https://tom-huang.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Relevant Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://vlmaps.github.io">VLMaps</a>
+            <a class="navbar-item" href="https://avlmaps.github.io">AVLMaps</a>
+            <a class="navbar-item" href="https://hovsg.github.io">HOV-SG</a>
+            <a class="navbar-item" href="https://byencoder.github.io">BYE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Multimodal Spatial Language Maps for Robot Navigation and
+              Manipulation</h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://tom-huang/github.io">Chenguang Huang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.oiermees.com/">Oier Mees</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://andyzeng.github.io/">Andy Zeng</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.utn.de/1/wolfram-burgard/">Wolfram Burgard</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Technology Nuremberg,</span>
+              <span class="author-block"><sup>2</sup>UC Berkeley,</span>
+              <span class="author-block"><sup>3</sup>Google Research</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="is-size-4 publication-authors"> accepted to International Journal of Robotics Research (IJRR),
+                2025</div>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://tom-huang.github.io/mslmaps"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/vlmaps/VLMaps" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>VLMaps Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/avlmaps/AVLMaps"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>AVLMaps Code</span>
+                  </a>
+                </span>
+                <!-- CoLab Link. -->
+                <span class="link-block">
+                  <a href="https://colab.research.google.com/drive/1gdtLvg_Fbl16N3ITp5FsU9ZAG6HmspVb?usp=sharing"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <!-- <i class="fab fa-github"></i> -->
+                      <img src="static/images/colab_icon.png" />
+                    </span>
+                    <span>CoLab</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src=""
+                type="video/mp4">
+      </video> -->
+
+        <img src="static/images/cover_lady.png" />
+
+        <h2 class="subtitle has-text-centered">
+          AVLMaps consumes multimodal prompts from audio, vision and language to solve zero shot spatial navigation
+          tasks in the real world.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve has-text-centered">
+            <video poster="" id="steve video" autoplay controls muted loop playsinline height="100%">
+              <source src="static/images/back_and_forth_x4_hres_caption.mp4" type="video/mp4">
+            </video>
+            <p id="overlay">move back and forth between the box and the keyboard</p>
+
+          </div>
+          <div class="item item-chair-tp has-text-centered">
+            <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
+              <source src="static/images/right_between_v3_x4_hres_caption.mp4" type="video/mp4">
+            </video>
+            <p id="overlay">move right 1.5 meters, then move left 3 meters, then move left 1.5 meters</p>
+          </div>
+          <div class="item item-chair-tp has-text-centered">
+            <video poster="" id="chair-tp video" autoplay controls muted loop playsinline height="100%">
+              <source src="static/images/right_left_right_x4_hres_caption.mp4" type="video/mp4">
+            </video>
+            <p id="overlay">move right 1.5 meters, then move left 3 meters, then move left 1.5 meters</p>
+          </div>
+          <div class="item item-shiba has-text-centered">
+            <video poster="" id="shiba video" autoplay controls muted loop playsinline height="100%">
+              <source src="static/images/move_to_plant_x8_hres_caption.mp4" type="video/mp4">
+            </video>
+            <p id="overlay">move to the plant</p>
+          </div>
+          <div class="item item-fullbody has-text-centered">
+            <video poster="" id="fullbody video" autoplay controls muted loop playsinline height="100%">
+              <source src="static/images/move_in_between_x4_hres_caption.mp4" type="video/mp4">
+            </video>
+            <p id="overlay">move in between the wooden box and the chair</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Grounding language to a navigating agent's observations can leverage pretrained multimodal foundation
+              models to match perceptions to object or event descriptions.
+              However, previous approaches remain disconnected from environment mapping, lack the spatial precision of
+              geometric maps, or neglect additional modality information beyond vision.
+              To address this, we propose multimodal spatial language maps as a spatial map representation that fuses
+              pretrained multimodal features with a 3D reconstruction of the environment.
+              We build these maps autonomously using standard exploration.
+              We present two instances of our maps, which are visual-language maps (VLMaps) and their extension to
+              audio-visual-language maps (AVLMaps) obtained by adding audio information.
+              When combined with large language models (LLMs), VLMaps can (i) translate natural language commands into
+              open-vocabulary spatial goals (e.g., ``in between the sofa and TV'') directly localized in the map, and
+              (ii)
+              be shared across different robot embodiments to generate tailored obstacle maps on demand.
+              Building upon the capabilities above, AVLMaps extend VLMaps by introducing a unified 3D spatial
+              representation integrating audio, visual, and language cues through the fusion of features from pretrained
+              multimodal foundation models. This enables robots to ground multimodal goal queries (e.g., text, images,
+              or
+              audio snippets) to spatial locations for navigation. Additionally, the incorporation of diverse sensory
+              inputs significantly enhances goal disambiguation in ambiguous environments. Experiments in simulation and
+              real-world settings demonstrate that our multimodal spatial language maps enable zero-shot spatial and
+              multimodal goal navigation and improve recall by 50% in ambiguous scenarios. These capabilities extend to
+              mobile robots and tabletop manipulators, supporting navigation and interaction guided by visual, audio,
+              and spatial cues.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <video autoplay controls muted loop playsinline width="100%">
+              <source src="static/images/avlmaps_ijrr_revision.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Approach</h2>
+          <div class="content has-text-justified has-text-centered">
+            <img src="static/images/pipeline.png" />
+            <h3 class="title is-4">AVLMap Creation</h3>
+            <p>
+              The key idea behind building an AVLMap is to integrate visual and audio
+              information into the 3D reconstruction of an environment. This can be
+              done by computing visual localization features (e.g. NetVLAD, SuperPoint),
+              visual-language features (e.g. LSeg), and audio-language features (e.g. AudioCLIP)
+              and associate these features with the 3D reconstruction. Finally, we
+              can predict 3D heatmaps indicating the location of multimodal concepts such
+              as objects, sounds, and images.
+            </p>
+            <div class="video-container">
+              <video autoplay muted loop playsinline width="50%">
+                <source src="static/images/avlmaps_twitter_post_slide_1_cropped.mp4" type="video/mp4">
+              </video>
+
+            </div>
+            <h3 class="title is-4">Cross-Modal Reasoning</h3>
+            <p>
+              When the language is ambiguous, the robot can use the multimodal information
+              to narrow down the goal location. For example, if the robot is asked to go to
+              the "chair near the sound of baby crying", it can use the audio information
+              integrated in the map to disambiguate the goal. The intuition behind this is that
+              we convert the predictions from different modalities into 3D heatmaps, and compute
+              the pixel-wise joint probability of the heatmaps. This allows us to compute the
+              probability of a goal location given the multimodal query.
+            </p>
+            <!-- <div style="display: flex; align-items: center; ">
+              <div style="  display: inline-block; width: 40%;" >
+                <img src="static/images/cross_modal_fusion.png" width="100%"/>
+              </div>
+              <div style="  display: inline-block; width: 60%;" >
+                <video autoplay muted loop playsinline width="100%">
+                  <source src="static/images/avlmaps_twitter_post.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div> -->
+            <img src="static/images/cross_modal_fusion.png" width="100%" />
+            <video autoplay muted loop playsinline width="100%">
+              <source src="static/images/avlmaps_twitter_post.mp4" type="video/mp4">
+            </video>
+            <h3 class="title is-4">Multimodal Spatial Goal Navigation</h3>
+            <!-- <video autoplay muted loop playsinline width="100%">
+              <source src="static/images/multi_modal_codegen.mp4" type="video/mp4">
+            </video> -->
+            <p>
+              We generate the navigation policies in the form of executable code with the help of Large Language Models.
+              By providing a few examples in the prompt, we exploit GPT-3 to parse language
+              instructions into a string of executable code, expressing functions
+              or logic structures (if/else statements, for/while loops) and parameterizing API calls
+              (e.g., robot.load_image(img_path), robot.move_to(position), robot.get_major_map(sound=sound_name),
+              robot.get_major_map(img=image),
+              robot.get_major_map(obj=obj_name) etc.).
+            </p>
+            <div class="video-container">
+              <video autoplay muted loop playsinline width="50%">
+                <source src="static/images/avlmaps_twitter_post_slide_2_square_normal_speed.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- <video autoplay muted loop playsinline width="100%">
+              <source src="static/images/vlmaps_blog_post.mp4" type="video/mp4">
+            </video> -->
+
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container is-max-desktop">
+
+          <div class="columns is-centered">
+
+
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <h2 class="title is-3">Experiment</h2>
+
+                <h3 class="title is-4">Multimodal Spatial Goal Navigation From Language</h3>
+                <div class="is-vcentered interpolation-panel">
+                  <!-- <p>Sequence 1</p> -->
+                  <div class="has-text-centered">
+                    <video class="video_4x" autoplay controls muted loop playsinline width="80%" height="50%">
+                      <source src="static/images/avlmaps_middle_back_pack_glass_breaking_and_image.mp4"
+                        type="video/mp4">
+                    </video>
+                  </div>
+                  <hr>
+                  <!-- <p>Sequence 2</p> -->
+                  <div class="has-text-centered">
+                    <video class="video_4x" autoplay controls muted loop playsinline width="80%" height="50%">
+                      <source src="static/images/avlmaps_door_chair_dog_bark.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <hr>
+                  <!-- <p>Sequence 3</p> -->
+                  <div class="has-text-centered">
+                    <video class="video_4x" autoplay controls muted loop playsinline width="80%" height="50%">
+                      <source src="static/images/avlmaps_between_two_shelvings.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <script>
+                    var vid = document.getElementsByClassName("video_4x");
+                    for (var i = 0; i < vid.length; i++) {
+                      vid[i].playbackRate = 4.0;
+                    }
+                  </script>
+                </div>
+                <hr>
+
+                <h3 class="title is-4">Cross-Modal Goal Reasoning Demo</h3>
+
+                <label for="combined_heatmap">Choose a concept:</label>
+                <select name="combined_heatmap" id="combined_heatmap" class="large_select">
+                  <option value="chair_dog">the chair near the sound of dog</option>
+                  <option value="backpack_glassbreaking">the backpack near the sound of glass breaking</option>
+                  <option value="shelf_backpack">the shelf near the backpack</option>
+                  <option value="shelf_dog">the shelf near the sound of dog</option>
+                  <option value="paperbox_churchbell">the paperbox near the sound of church bell</option>
+                  <option value="shelf_doorknock">the shelf near the sound of door knock</option>
+                </select>
+
+
+                <!-- <label for="major_heatmap">Choose a concept for the major:</label>
+                <select name="major_heatmap" id="major_heatmap">
+                  <optgroup label="Object">
+                    <option value="chair">chair</option>
+                    <option value="backpack">backpack</option>
+                    <option value="shelf">shelf</option>
+                  </optgroup>
+                </select>
+
+                <label for="auxiliary_heatmap">Choose a concept to disambiguate goals:</label>
+                <select name="auxiliary_heatmap" id="auxiliary_heatmap">
+                  <optgroup label="Sound">
+                    <option value="dog">sound of dog</option>
+                    <option value="glassbreaking">sound of glass breaking</option>
+                    <option value="baby_crying">sound of baby crying</option>
+                    <option value="church_bell">sound of church bell</option>
+                  </optgroup>
+                  <optgroup label="Object">
+                    <option value="backpack">backpack</option>
+                  </optgroup>
+                </select> -->
+
+                <button type="button" onclick="show_img()" id="btnID" class="large_button">Update</button>
+                <div class="columns has-text-centered">
+                  <div class="column">
+                    <p>Major</p>
+                    <img id="major_heatmap_img" src="static/images/major_heatmap/chair_heatmap.png" />
+                  </div>
+                  <div class="column">
+                    <p>Auxiliary</p>
+                    <img id="auxiliaray_heatmap_img" src="static/images/auxi_map/dog_heatmap.png" />
+                  </div>
+                  <div class="column">
+                    <p>Fuse</p>
+                    <img id="fuse_heatmap_img" src="static/images/fuse_map/chair_near_dog_heatmap.png" />
+                  </div>
+                </div>
+                <script>
+                  function show_img() {
+
+                    /* Access image by id and change
+                    the display property to block*/
+                    // document.getElementById('major_heatmap')
+                    // var v1 = document.getElementById('major_heatmap').value;
+                    // var v2 = document.getElementById('auxiliary_heatmap').value;
+                    var v = document.getElementById('combined_heatmap').value;
+                    const myArray = v.split("_");
+                    // document.getElementById('major_heatmap_img').src = `static/images/major_heatmap/${v1}_heatmap.png`;
+                    // document.getElementById('auxiliaray_heatmap_img').src = `static/images/auxi_map/${v2}_heatmap.png`;
+                    // document.getElementById('auxiliaray_heatmap_img').src = `static/images/auxi_map/${v1}_near_${v2}_heatmap.png`;
+                    document.getElementById('major_heatmap_img').src = `static/images/major_heatmap/${myArray[0]}_heatmap.png`;
+                    document.getElementById('auxiliaray_heatmap_img').src = `static/images/auxi_map/${myArray[1]}_heatmap.png`;
+                    document.getElementById('fuse_heatmap_img').src = `static/images/fuse_map/${myArray[0]}_near_${myArray[1]}_heatmap.png`;
+
+                  }
+                </script>
+
+                <hr>
+                <h3 class="title is-4">Table Top Cross-Modal Goal Reasoning</h3>
+                <img src="static/images/avlmaps_tabletop.png" width="100%" />
+                <p>
+                  We extend our investigation to assess how AVLMaps benefit a fixed-based manipulator in
+                  real-world table-top tasks, which require a more detailed semantic understanding of the scene. In this
+                  setup, the robot manipulator must approach multimodal goals with a stricter tolerance for error
+                  (within 10 cm). Additionally, we explore AVLMaps' potential for application across robots with varied
+                  embodiments
+                </p>
+
+                <!-- <div class="columns is-vcentered interpolation-panel">
+                  <p>Sequence 2</p>
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/spatial_goal_nav_2_v1.mp4" type="video/mp4">
+                    </video>
+                    <p>VLMaps</p>
+                  </div>
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/spatial_goal_nav_cow_2.mp4" type="video/mp4">
+                    </video>
+                    <p>CLIP on Wheels</p>
+                  </div>
+                </div>
+
+
+                <br /> -->
+
+                <!-- <h3 class="title is-4">Multi-Embodiment Navigation</h3>
+                <div class="content has-text-justified">
+                  <p>
+                    A VLMap can be shared among different robots and enables generation of obstacle maps for different
+                    embodiments on-the-fly to improve navigation efficiency. For example, a LoCoBot (ground robot) has
+                    to avoid sofa, tables, chairs and so on during planning while a drone can ignore them. Experiments
+                    below show how a single VLMap representation in each scene can adapt to different embodiments
+                    (by generating customized obstacle maps) and improve navigation efficiency.
+                  </p>
+                </div>
+
+                <p>Move to the laptop and the box sequentially</p>
+                <br>
+                <div class="columns is-vcentered interpolation-panel">
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_2_drone.mp4" type="video/mp4">
+                    </video>
+                    <p>Drone</p>
+                  </div>
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_2_locobot.mp4" type="video/mp4">
+                    </video>
+                    <p>LoCoBot</p>
+                  </div>
+                </div>
+
+                <p>Move to the window</p>
+                <br>
+                <div class="columns is-vcentered interpolation-panel">
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_3_drone.mp4" type="video/mp4">
+                    </video>
+                    <p>Drone</p>
+                  </div>
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_3_locobot.mp4" type="video/mp4">
+                    </video>
+                    <p>LoCoBot</p>
+                  </div>
+                </div>
+
+                <p>Move to the television</p>
+                <br>
+                <div class="columns is-vcentered interpolation-panel">
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_4_drone.mp4" type="video/mp4">
+                    </video>
+                    <p>Drone</p>
+                  </div>
+                  <div class="column  has-text-centered">
+                    <video autoplay controls muted loop playsinline height="100%">
+                      <source src="static/images/multi_4_locobot.mp4" type="video/mp4">
+                    </video>
+                    <p>LoCoBot</p>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+          </div>
+      </section>
+
+
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>@article{huang23avlmaps,
+              title={Multimodal Spatial Language Maps for Robot Navigation and Manipulation},
+              author={Chenguang Huang and Oier Mees and Andy Zeng and Wolfram Burgard},
+              booktitle=International Journal of Robotics Research (IJRR),
+              year={2025},
+          }</code></pre>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">People</h2>
+          <div class="columns container">
+            <div class="column has-text-centered profile">
+              <a href="https://tom-huang.github.io"><img src="static/images/huang.jpg" alt="Chenguang Huang" /></a>
+              <h3><a href="https://tom-huang.github.io">Chenguang Huang</a></h3>
+            </div>
+
+            <div class="column has-text-centered profile">
+              <a href="http://www.oiermees.com"><img src="static/images/mees.jpg" alt="Oier Mees" /></a>
+              <h3><a href="http://www.oiermees.com">Oier Mees</a></h3>
+            </div>
+
+            <div class="column has-text-centered profile">
+              <a href="https://andyzeng.github.io/"><img src="static/images/andy.jpg" alt="Andy Zeng" /></a>
+              <h3><a href="https://andyzeng.github.io/">Andy Zeng</a></h3>
+            </div>
+
+            <div class="column has-text-centered profile">
+              <a href="https://www.utn.de/1/wolfram-burgard/"><img src="static/images/burgard.jpg"
+                  alt="Wolfram Burgard" /></a>
+              <h3><a href="https://www.utn.de/1/wolfram-burgard/">Wolfram Burgard</a></h3>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <a class="icon-link" href="https://arxiv.org/pdf/2210.05714.pdf">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="" class="external-link" disabled>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p> Website borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> under a <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+                    International</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
